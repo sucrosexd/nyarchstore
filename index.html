@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <title>nyarchlinux store</title>
+</head>
+<header>
+    <img class="logo" src="./assets/images/logo.svg">
+    <p>oh yea <a target="_blank" href="./assets/videos/justinbieber.mp4"
+            style="text-decoration: none; color: black;">justin bieber</a> linux</p>
+</header>
+
+<body>
+    <button class="filterstoggle">
+        Фильтры
+    </button>
+    <div class="filters">
+        <div>
+            <span class="filtersname">Стоимость</span>
+            <div>
+                <input type="text" id="cost" name="cost" placeholder="69" maxlength="4"> <span>—</span> <input
+                    type="text" id="cost" name="cost" placeholder="9999" maxlength="4">
+            </div>
+        </div>
+        <div>
+            <span class="filtersname">Размер дистрибутива (в ГБ)</span>
+            <div>
+                <input type="text" id="size" name="size" placeholder="1" maxlength="2"> <span>—</span> <input
+                    type="text" id="size" name="size" placeholder="7" maxlength="2">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <span class="filtersname">Время установки</span>
+            <label>
+                <input type="checkbox" name="timefilter" value="1sec">
+                Меньше 1 секунды
+            </label>
+            <label>
+                <input type="checkbox" name="timefilter" value="1week">
+                Меньше 1 недели
+            </label>
+            <label>
+                <input type="checkbox" name="timefilter" value="1year">
+                Меньше 1 года
+            </label>
+            <label>
+                <input type="checkbox" name="timefilter" value="10year">
+                Меньше 10 лет
+            </label>
+            <label>
+                <input type="checkbox" name="timefilter" value="naneinf">
+                naneinf лет
+            </label>
+        </div>
+        <div>
+            <span class="filtersname">Степень абсурда: <output id="absurdvalue"></output>%</span>
+            <input type="range" id="absurd" name="absurd" min="0" max="100" step="20" value="0" list="value" />
+        </div>
+        <datalist id="value">
+            <option value="0"></option>
+            <option value="20"></option>
+            <option value="40"></option>
+            <option value="60"></option>
+            <option value="80"></option>
+            <option value="100"></option>
+        </datalist>
+        <div style="display: flex; flex-direction: column;">
+            <span class="filtersname">Рейтинг</span>
+            <label>
+                <input type="checkbox" name="starfilter" value="1star">
+                ★☆☆☆☆
+            </label>
+            <label>
+                <input type="checkbox" name="starfilter" value="2star">
+                ★★☆☆☆
+            </label>
+            <label>
+                <input type="checkbox" name="starfilter" value="3star">
+                ★★★☆☆
+            </label>
+            <label>
+                <input type="checkbox" name="starfilter" value="4star">
+                ★★★★☆
+            </label>
+            <label>
+                <input type="checkbox" name="starfilter" value="5star">
+                ★★★★★
+            </label>
+        </div>
+    </div>
+    <div class="items">
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/nyarch.png">
+            <a class="originallink" href="./pages/nyarch.html">
+                <p class="productname">Nyarch Linux</p>
+            </a>
+            <span class="price">6160 ₽</span>
+            <a class="buybutton" target="_blank" href="https://nyarchlinux.moe/">Купить</a>
+            <div class="desc">
+                <span>Размер: 4 ГБ</span>
+                <span>Время установки: Меньше 1 недели</span>
+                <span>Степень абсурда: Более 80%</span>
+                <span>Рейтинг: ★★★★★</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/uwuntu.png">
+            <a class="originallink" href="./pages/uwuntu.html">
+                <p class="productname">UwUntu</p>
+            </a>
+            <span class="price">7270 ₽</span>
+            <a class="buybutton" target="_blank" href="https://uwuntuos.site/">Купить</a>
+            <div class="desc">
+                <span>Размер: 5 ГБ</span>
+                <span>Время установки: Меньше 1 недели</span>
+                <span>Степень абсурда: Более 80%</span>
+                <span>Рейтинг: ★★★★☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/suicidelinux.svg">
+            <a class="originallink" href="./pages/suicidelinux.html">
+                <p class="productname">Suicide Linux</p>
+            </a>
+            <span class="price">9999 ₽</span>
+            <a class="buybutton" target="_blank" href="https://hub.docker.com/r/tiagoad/suicide-linux/">Купить</a>
+            <div class="desc">
+                <span>Размер: 1 ГБ</span>
+                <span>Время установки: Меньше 1 секунды</span>
+                <span>Степень абсурда: Более 100%</span>
+                <span>Рейтинг: ★☆☆☆☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/redstaros.png">
+            <a class="originallink" href="./pages/redstaros.html">
+                <p class="productname">Red Star OS</p>
+            </a>
+            <span class="price">???? ₽</span>
+            <a class="buybutton" target="_blank" href="./assets/videos/redstaros.mp4">Купить</a>
+            <div class="desc">
+                <span>Размер: ????</span>
+                <span>Время установки: naneinf лет</span>
+                <span>Степень абсурда: ????</span>
+                <span>Рейтинг: ☆☆☆☆☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/ulbsd.png">
+            <a class="originallink" href="./pages/ulbsd.html">
+                <p class="productname">Ульяновск.BSD</p>
+            </a>
+            <span class="price">2500 ₽</span>
+            <a class="buybutton" target="_blank" href="https://ulbsd.ru/">Купить</a>
+            <div class="desc">
+                <span>Размер: 3 ГБ</span>
+                <span>Время установки: Меньше 1 года</span>
+                <span>Степень абсурда: Более 40%</span>
+                <span>Рейтинг: ★★★☆☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/opensuse.webp">
+            <a class="originallink" href="./pages/opensuse.html">
+                <p class="productname">openSUSE</p>
+            </a>
+            <span class="price">5053 ₽</span>
+            <a class="buybutton" target="_blank" href="https://www.opensuse.org/">Купить</a>
+            <div class="desc">
+                <span>Размер: 4 ГБ</span>
+                <span>Время установки: Меньше 1 недели</span>
+                <span>Степень абсурда: 0%</span>
+                <span>Рейтинг: ★★★★☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/hannahmontana.png">
+            <a class="originallink" href="./pages/hannahmontana.html">
+                <p class="productname">Hannah Montana Linux</p>
+            </a>
+            <span class="price">2006 ₽</span>
+            <a class="buybutton" target="_blank" href="./assets/videos/hannahmontana.mp4">Купить</a>
+            <div class="desc">
+                <span>Размер: 1 ГБ</span>
+                <span>Время установки: Меньше 10 лет</span>
+                <span>Степень абсурда: Более 100%</span>
+                <span>Рейтинг: ★★★★★</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/astra.png">
+            <a class="originallink" href="./pages/astra.html">
+                <p class="productname">Astra Linux</p>
+            </a>
+            <span class="price">4300 ₽</span>
+            <a class="buybutton" target="_blank" href="https://astralinux.ru/">Купить</a>
+            <div class="desc">
+                <span>Размер: 5 ГБ</span>
+                <span>Время установки: Меньше 1 недели</span>
+                <span>Степень абсурда: Более 20%</span>
+                <span>Рейтинг: ★★★☆☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/gentoo.svg">
+            <a class="originallink" href="./pages/gentoo.html">
+                <p class="productname">Gentoo Linux</p>
+            </a>
+            <span class="price">2100 ₽</span>
+            <a class="buybutton" target="_blank" href="https://www.gentoo.org/">Купить</a>
+            <div class="desc">
+                <span>Размер: 7 ГБ</span>
+                <span>Время установки: Меньше 1 недели</span>
+                <span>Степень абсурда: 0%</span>
+                <span>Рейтинг: ★★★★☆</span>
+            </div>
+        </div>
+        <div class="product">
+            <img class="productimg" src="./assets/images/distro/joker.png">
+            <a class="originallink" href="./pages/unknown.html">
+                <p class="productname">??????</p>
+            </a>
+            <span class="price">???? ₽</span>
+            <a class="buybutton" target="_blank" href="">Купить</a>
+            <div class="desc">
+                <span>Размер: ????</span>
+                <span>Время установки: naneinf лет</span>
+                <span>Степень абсурда: ????</span>
+                <span>Рейтинг: ☆☆☆☆☆</span>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/absurd.js"></script>
+    <script src="./scripts/filter.js"></script>
+</body>
+<footer>
+    <img class="logo" src="./assets/images/logodark.svg">
+    <p>oh no three weeks and nothing... base.</p>
+</footer>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "balsamiqsans";
+    src: url("../assets/fonts/BalsamiqSans-Regular.ttf");
+}
+@font-face {
+    font-family: "balsamiqsansbold";
+    src: url("../assets/fonts/BalsamiqSans-Bold.ttf");
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(85, 255, 255, 0.376);
+    height: 10vh;
+    font-family: "balsamiqsansbold";
+}
+.productimg {
+    position: relative;
+    top: 10vh;
+    left: 18vw; 
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    top: 20vh;
+    left: 45vw;
+    font-family: "balsamiqsans";
+    width: 40vw;
+    height: 10vw;
+    border-radius: 5px;
+}
+.productname {
+    position: relative;
+    font-family: "balsamiqsansbold";
+    font-size: 170%;
+}
+.stars {
+    position: relative;
+    bottom: 2.3ch;
+    left: 31ch;
+    width: 20%;
+    font-size: 150%;
+    color: rgb(255, 240, 34);
+    text-shadow: 0px 0px 1px black;
+}
+.price {
+    font-size: 150%;
+    position: relative;
+    top: 27%;
+    font-family: "balsamiqsansbold";
+}
+.buybutton {
+    position: relative;
+    left: 82%;
+    bottom: 5%;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em;
+    border-radius: 5px;
+    background: rgb(77, 163, 220);
+    transition: .2s;
+    width: 10%;
+}
+.buybutton:hover {
+    background: rgb(84, 187, 255);
+}
+.briefdesc {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 90%;
+    font-family: "balsamiqsans";
+    opacity: 60%;
+    width: 50%;
+    bottom: 75%;
+}
+.links {
+    display: grid;
+    position: absolute;
+    padding: 15px;
+    top: 35vw;
+    left: 18vw;
+    background-color: rgb(245, 245, 245);
+    font-family: "balsamiqsansbold";
+    border-radius: 5px;
+}
+.links li {
+    list-style: none;
+    padding-top: 5px;
+}
+.links a {
+    color: black;
+    text-decoration: none;
+}
+.moreinfo {
+    display: grid;
+    grid-gap: 5px;
+    grid-column: auto;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    width: 50vw;
+    left: 34vw;
+    top: 35vw;
+    font-family: "balsamiqsans";
+    border-radius: 5px;
+}
+.desc {
+    display: grid;
+    
+}
+.specs {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+.min {
+    display: flex;
+    flex-direction: column;
+    font-family: "balsamiqsans";
+}
+.rec {
+    display: flex;
+    flex-direction: column;
+    font-family: "balsamiqsans";
+}
+.revievs {
+    display: grid;
+    grid-gap: 10px;
+}
+#reviev {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: rgba(220, 220, 220, 0.5);
+}
+.avatar {
+    width: 30px;
+    border-radius: 20px;
+}
+.name {
+    position: relative;
+    bottom: 1ch;
+}
+.revievstars {
+    position: relative;
+    bottom: 1ch;
+    left: 1ch;
+    color: rgb(255, 240, 34);
+    font-size: 100%;
+    text-shadow: 0px 0px 1px black;
+}

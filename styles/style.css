@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "balsamiqsans";
+    src: url("../assets/fonts/BalsamiqSans-Regular.ttf");
+}
+@font-face {
+    font-family: "balsamiqsansbold";
+    src: url("../assets/fonts/BalsamiqSans-Bold.ttf");
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(85, 255, 255, 0.376);
+    height: 10vh;
+    font-family: "balsamiqsansbold";
+}
+.logo {
+    position: relative;
+    right: 10ch;
+}
+.filterstoggle {
+    display: none;
+}
+.filters {
+    display: grid;
+    grid-gap: 25px;
+    position: absolute;
+    padding: 1ch;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    width: 25ch;
+    left: 3vw;
+    top: 20vh;
+    font-family: "balsamiqsans";
+}
+.filtersname
+{
+    font-family: "balsamiqsansbold";
+}
+#cost {
+    width: 80px;
+}
+#size {
+    width: 80px;
+}
+.items {
+    display: grid;
+    position: absolute;
+    width: 70%;
+    left: 24%;
+    top: 20vh;
+    grid-gap: 10px;
+    font-family: "balsamiqsans";
+}
+.product {
+    background-color: rgb(240, 240, 240);
+    height: 13vw;
+    padding: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.desc {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 90%;
+    font-family: "balsamiqsans";
+    opacity: 60%;
+    width: 30%;
+    left: 22.7ch;
+    bottom: 23.1ch;
+}
+.buybutton {
+    position: relative;
+    left: 80%;
+    bottom: 84%;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em;
+    border-radius: 5px;
+    background: rgb(77, 163, 220);
+    transition: .2s;
+}
+.buybutton:hover {
+    background: rgb(84, 187, 255);
+}
+.buybutton:active {
+    background: rgb(68, 143, 193);
+}
+.productname {
+    font-size: 120%;
+    position: relative;
+    bottom: 15ch;
+    left: 17ch;
+}
+.productimg {
+    width: 13vw;
+    height: 13vw;
+    border-radius: 10px;
+}
+.price {
+    font-family: "balsamiqsansbold";
+    font-size: 150%;
+    position: relative;
+    left: 89%;
+    bottom: 13ch;
+}
+.originallink {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    font-family: "balsamiqsans";
+    top: 300vh;
+    height: 10vh;
+    width: 100vw;
+}
+@media screen and (min-width: 320px) {
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        position: static;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .filterstoggle {
+        width: 25vw;
+        height: 12vw;
+        position: relative;
+        left: 37vw;
+        top: 3vh;
+        background-color: rgb(77, 163, 220);
+        color: white;
+        border: 0.1px black;
+        border-radius: 5px;
+        font-family: "balsamiqsans";
+        font-size: 105%;
+        transition: .1s;
+    }
+    .filterstoggle:active {
+        background-color: rgb(68, 143, 193);
+    }
+    .filters {
+        display: none;
+    }
+    .filters.show
+    {
+        display: grid;
+        position: relative;
+        left: 10vw;
+        top: 5vh;
+        margin-bottom: 20px;
+        animation: show .5s ease-in-out;
+    }
+    @keyframes show {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100;
+        }
+    }
+    .items {
+        position: relative;
+        top: 5vh;
+        left: 5vw;
+        width: 90vw;
+        overflow: hidden;
+    }
+    .product {
+        height: 12ch;
+    }
+    .desc {
+        flex-direction: column;
+        left: 0vw;
+        bottom: 14vw;
+        width: 100%;
+        font-size: 70%;
+    }
+    .buybutton {
+        left: 47vw;
+        bottom: 12vw;
+        padding: .5em;
+        font-size: 90%;
+    }
+    .buybutton:active
+    {
+        background: rgb(68, 143, 193);
+    }
+    .productname {
+        bottom: 15vw;
+        left: 20vw;
+        font-size: 110%;
+    }
+    .productimg {
+        width: 18vw;
+        height: 18vw;
+    }
+    .price {
+        left: 80%;
+        bottom: 23vw;
+        font-size: 100%;
+    }
+    footer {
+        position: relative;
+        top: 0;
+        flex-direction: column;
+        margin-top: 7vh;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .logo {
+        position: relative;
+        right: 10ch;
+    }
+}
