@@ -169,6 +169,16 @@ footer {
         top: 5vh;
         margin-bottom: 20px;
         animation: show .5s ease-in-out;
+        width: 75vw;
+    }
+    #cost {
+        width: 30vw;
+    }
+    #size {
+        width: 30vw;
+    }
+    #absurd {
+        width: 70vw;
     }
     @keyframes show {
         from {
