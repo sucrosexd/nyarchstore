@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "balsamiqsans";
+    src: url("../assets/fonts/BalsamiqSans-Regular.ttf");
+}
+@font-face {
+    font-family: "balsamiqsansbold";
+    src: url("../assets/fonts/BalsamiqSans-Bold.ttf");
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(85, 255, 255, 0.376);
+    height: 10vh;
+    font-family: "balsamiqsansbold";
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "balsamiqsans";
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    margin-top: 10px;
+    text-align: center;
+}
+#rofl {
+    position: relative;
+    width: 10%;
+    left: 45%;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 5px;
+    background: rgb(77, 163, 220);
+}
+@media screen and (min-width: 320px) and (max-width: 766px) {
+    header {
+        flex-direction: column;
+    }
+}
