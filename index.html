@@ -10,14 +10,18 @@
 </head>
 <header>
     <img class="logo" src="./assets/images/logo.svg">
-    <p>oh yea <a target="_blank" href="./assets/videos/justinbieber.mp4"
-            style="text-decoration: none; color: black;">justin bieber</a> linux</p>
-    <a style="text-decoration: none; color: black;" href="./pages/aboutus.html">Про нас</a>
+    <a target="_blank" href="./assets/videos/justinbieber.mp4" class="menu-pc">oh yea justin bieber linux</a>
+    <a class="menu-pc" href="./pages/aboutus.html">О сайте</a>
+    <button class="menutoggle"><span>☰</span></button>
+    <div class="menumobile">
+        <a target="_blank" href="./assets/videos/justinbieber.mp4">oh yea justin bieber linux</a>
+        <a href="./pages/aboutus.html">О сайте</a>
+    </div>
 </header>
 
 <body>
     <button class="filterstoggle">
-        Фильтры
+        <span>Фильтры</span>
     </button>
     <div class="filters">
         <div>
@@ -163,7 +167,7 @@
             <a class="originallink" href="./pages/ulbsd.html">
                 <p class="productname">Ульяновск.BSD</p>
             </a>
-            <div class="buying">    
+            <div class="buying">
                 <span class="price">2500 ₽</span>
                 <a class="buybutton" target="_blank" href="https://ulbsd.ru/">Купить</a>
             </div>
@@ -193,7 +197,7 @@
         <div class="product">
             <img class="productimg" src="./assets/images/distro/hannahmontana.png">
             <a class="originallink" href="./pages/hannahmontana.html">
-                <p class="productname">Hannah Montana Linux</p>
+                <p class="productname">Hannah Montana</p>
             </a>
             <div class="buying">
                 <span class="price">2006 ₽</span>
@@ -257,10 +261,11 @@
     </div>
     <script src="./scripts/absurd.js"></script>
     <script src="./scripts/filter.js"></script>
+    <script src="./scripts/mobilemenu.js"></script>
 </body>
 <footer>
     <img class="logo" src="./assets/images/logodark.svg">
-    <p>oh no three weeks and nothing... base.</p>
+    <p>oh no three weeks and nothing...</p>
 </footer>
 
 </html>

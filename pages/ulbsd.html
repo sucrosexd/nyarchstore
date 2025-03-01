@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/ulbsd.css">
     <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon">
-    <title>nyarchlinux store</title>
+    <title>nyarchstore - Ульяновск.BSD</title>
 </head>
 <header>
-    <a href="../index.html"><img class="logo" src="../assets/images/logo.svg"></a>
-    <p>oh yea <a target="_blank" href="../assets/videos/justinbieber.mp4"
-            style="text-decoration: none; color: black;">justin bieber</a> linux</p>
+    <img class="logo" src="../assets/images/logo.svg">
+    <a target="_blank" href="../assets/videos/justinbieber.mp4" class="menu-pc">oh yea justin bieber linux</a>
+    <a class="menu-pc" href="../pages/aboutus.html">О сайте</a>
+    <button class="menutoggle"><span>☰</span></button>
+    <div class="menumobile">
+        <a target="_blank" href="../assets/videos/justinbieber.mp4">oh yea justin bieber linux</a>
+        <a href="../pages/aboutus.html">О сайте</a>
+    </div>
 </header>
 
 <body>
@@ -37,7 +42,7 @@
     <div class="moreinfo">
         <h4 id="desc">Описание</h4>
         <div class="desc">
-            <span>Не Linux, поразительно.</span>
+            <h4>Не Linux, поразительно.</h4>
             <span>Но! Ульяновск.BSD, в отличии от FreeBSD, полностью настроен для работы прямо из коробки. 
                 Тем более! Он поддерживает как и Linux- (встроенно), так и Windows-приложения (ну почти). 
                 И нет, это не шутка, так заверяют сами разработчики данного продукта!</span>
@@ -62,18 +67,18 @@
         <h4 id="revievs">Отзывы</h4>
         <div class="revievs">
             <div id="reviev">
-                <img class="avatar" src="../assets/images/avatars/key.jpg">
-                <span class="name">key,</span>
-                <span class="revievstars">★★★★★</span>
+                <img class="avatar" src="../assets/images/avatars/bottom.webp">
+                <span class="name">верх ведра</span>
+                <span class="revievstars">★★★☆☆</span>
                 <br>
-                <span></span>
+                <span>Это точно не FreeBSD??????</span>
             </div>
             <div id="reviev">
-                <img class="avatar" src="../assets/images/avatars/cirno.gif">
-                <span class="name">bagelseeker</span>
-                <span class="revievstars">★★★★★</span>
+                <img class="avatar" src="../assets/images/avatars/foto.jpg">
+                <span class="name">whoareyou</span>
+                <span class="revievstars">★☆☆☆☆</span>
                 <br>
-                <span>с кетчупом нормально</span>
+                <span>Порта под Эльбрус нет.</span>
             </div>
             <div id="reviev">
                 <img class="avatar" src="../assets/images/avatars/kde2freebsd.jpg">
@@ -82,9 +87,14 @@
                 <br>
                 <span>не линукс, бсд</span>
             </div>
-            <h4><a target="_blank" href="">Войдите</a> или <a target="_blank" href="">зарегистрируйтесь</a>, чтобы оставить отзыв</h4>
+            <h4><a target="_blank" href="../assets/videos/grievous.mov">Войдите</a> или <a target="_blank" href="../assets/videos/HARMONICACAT.mp4">зарегистрируйтесь</a>, чтобы оставить отзыв</h4>
         </div>
     </div>
+    <script src="../scripts/mobilemenu.js"></script>
 </body>
+<footer>
+    <img class="logo" src="../assets/images/logodark.svg">
+    <p>huh, ulbsd isn't freebsd...</p>
+</footer>
 
 </html>

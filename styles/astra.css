@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "balsamiqsans";
+    src: url("../assets/fonts/BalsamiqSans-Regular.ttf");
+}
+@font-face {
+    font-family: "balsamiqsansbold";
+    src: url("../assets/fonts/BalsamiqSans-Bold.ttf");
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(85, 255, 255, 0.376);
+    height: 10vh;
+    font-family: "balsamiqsansbold";
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.menumobile {
+    display: none;
+}
+.menutoggle {
+    display: none;
+}
+.productimg {
+    position: relative;
+    top: 5vw;
+    left: 18vw; 
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    top: 11vw;
+    left: 45vw;
+    font-family: "balsamiqsans";
+    width: 40vw;
+    height: 10vw;
+    border-radius: 5px;
+}
+.productname {
+    position: relative;
+    font-family: "balsamiqsansbold";
+    font-size: 170%;
+}
+.stars {
+    position: relative;
+    bottom: 2.3ch;
+    left: 32vw;
+    width: 20%;
+    font-size: 150%;
+    color: rgb(255, 240, 34);
+    text-shadow: 0px 0px 1px black;
+}
+.price {
+    font-size: 150%;
+    position: relative;
+    top: 27%;
+    font-family: "balsamiqsansbold";
+}
+.buybutton {
+    position: relative;
+    left: 82%;
+    bottom: 5%;
+    color: white;
+    text-decoration: none;
+    padding: .8em;
+    border-radius: 5px;
+    background: rgb(77, 163, 220);
+    transition: .2s;
+    width: 10%;
+    text-align: center;
+}
+.buybutton:hover {
+    background: rgb(84, 187, 255);
+}
+.briefdesc {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 90%;
+    font-family: "balsamiqsans";
+    opacity: 60%;
+    width: 50%;
+    bottom: 7vw;
+}
+.links {
+    display: grid;
+    position: absolute;
+    padding: 15px;
+    top: 35vw;
+    left: 18vw;
+    background-color: rgb(245, 245, 245);
+    font-family: "balsamiqsansbold";
+    border-radius: 5px;
+}
+.links li {
+    list-style: none;
+    padding-top: 5px;
+}
+.links a {
+    color: black;
+    text-decoration: none;
+}
+.moreinfo {
+    display: grid;
+    grid-gap: 5px;
+    grid-column: auto;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    width: 50vw;
+    left: 34vw;
+    top: 35vw;
+    font-family: "balsamiqsans";
+    border-radius: 5px;
+}
+.desc {
+    display: grid;
+    
+}
+.specs {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+.min {
+    display: flex;
+    flex-direction: column;
+    font-family: "balsamiqsans";
+}
+.rec {
+    display: flex;
+    flex-direction: column;
+    font-family: "balsamiqsans";
+}
+.revievs {
+    display: grid;
+    grid-gap: 10px;
+}
+#reviev {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: rgba(220, 220, 220, 0.5);
+}
+.avatar {
+    width: 30px;
+    border-radius: 20px;
+}
+.name {
+    position: relative;
+    bottom: 1ch;
+}
+.revievstars {
+    position: relative;
+    bottom: 1ch;
+    left: 1ch;
+    color: rgb(255, 240, 34);
+    font-size: 100%;
+    text-shadow: 0px 0px 1px black;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    font-family: "balsamiqsans";
+    top: 85vw;
+    height: 10vh;
+    width: 100vw;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        height: 10vh;
+    }
+    .menu-pc {
+        display: none;
+    }
+    .menutoggle {
+        display: inline;
+        position: absolute;
+        top: 1vh;
+        right: 9vw;
+        background-color: rgba(85, 255, 255, 0);
+        border: 0cm;
+        font-size: 250%;
+    }
+    .menumobile.show {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        animation: show .5s ease-in-out;
+        background-color: rgba(85, 255, 255, 0.376);
+        z-index: 1;
+    }
+    @keyframes show {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100;
+        }
+    }
+    .menumobile.show a {
+        padding: 5px;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .productimg {
+        width: 65vw;
+        height: 65vw;
+        top: 5vw;
+    }
+    .product {
+        position: relative;
+        top: 10vw;
+        left: 10vw;
+        width: 72vw;
+        height: 40vw;
+    }
+    .productname {
+        font-size: 130%;
+    }
+    .stars {
+        font-size: 100%;
+        left: 51vw;
+    }
+    .briefdesc {
+        font-size: 80%;
+        width: 95%;
+        bottom: 24vw;
+    }
+    .buybutton {
+        padding: .5em;
+        width: 22%;
+        bottom: -4.4vw;
+        left: 51vw;
+    }
+    .price {
+        top: 15vw;
+    }
+    .buybutton:active {
+        background: rgb(68, 143, 193);;
+    }
+    .links {
+        position: relative;
+        top: 15vw;
+        left: 10vw;
+        width: 70%;
+    }
+    .moreinfo {
+        position: relative;
+        left: 10vw;
+        top: 20vw;
+        width: 68%;
+        font-size: 90%;
+        text-wrap: balance;
+        padding-left: 15px;
+    }
+    .specs {
+        grid-auto-flow: row;
+    }
+    footer {
+        position: relative;
+        top: 0;
+        flex-direction: column;
+        margin-top: 12vh;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+   .product {
+        height: 35vw;
+   }
+    .stars {
+        left: 54vw;
+   }
+   .buybutton {
+        left: 52vw;
+   }
+   .briefdesc {
+        bottom: 19vw;
+   }
+   footer {
+    margin-top: 15vh;
+   }
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+    .product {
+        width: 74vw;
+    }
+    .stars {
+        left: 58vw;
+    }
+    .buybutton {
+        left: 56vw;
+        width: 14vw;
+    }
+    .briefdesc {
+        bottom: 15vw;
+    }
+    .links {
+        width: 73%;
+    }
+    .moreinfo {
+        width: 72%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .productimg {
+        top: 7vw;
+        left: 10vw;
+        width: 25vw;
+        height: 25vw;
+    }
+    .product {
+        top: 18vw;
+        left: 40vw;
+        width: 48vw;
+        height: 18vw;
+    }
+    .productname {
+        top: 1vw;
+    }
+    .briefdesc {
+        width: 55%;
+        bottom: 12vw;
+    }
+    .price {
+        top: 6vw;
+    }
+    .buybutton {
+        left: 36vw;
+        width: 14%;
+        bottom: 1vw;
+    }
+    .stars {
+        left: 34vw;
+        bottom: 3vw;
+    }
+    .links {
+        top: 45vw;
+        left: 5vw;
+    }
+    .moreinfo {
+        width: 54vw;
+        left: 35vw;
+        top: 45vw;
+    }
+    footer {
+        top: 155vw;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1279px) {
+    .price {
+        top: 8vw;
+    }
+    .briefdesc {
+        bottom: 10vw;
+    }
+    .buybutton {
+        bottom: -3vw;
+        left: 38vw;
+    }
+    .stars {
+        left: 37vw;
+    }
+    footer {
+        top: 125vw;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+    footer {
+        top: 88vw;
+    }
+    .buybutton {
+        left: 84%;
+    }
+    .links {
+        left: 15vw;
+    }
+    .moreinfo {
+        width: 53vw;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+    .briefdesc {
+        bottom: 65%
+    }
+    .product {
+        height: 9vw;
+    }
+    .stars {
+        left: 33vw;
+    }
+    .buybutton {
+        left: 84%;
+    }
+    footer {
+        top: 76vw;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .productimg {
+        width: 16vw;
+        height: 16vw;
+    }
+    .price {
+        top: 5vw;
+    }
+    .briefdesc {
+        bottom: 4vw;
+    }
+    .buybutton {
+        bottom: -2.7vw;
+        left: 34vw;
+    }
+    .stars {
+        left: 34vw;
+    }
+    footer {
+        top: 65vw;
+    }
+    .links {
+        top: 30vw;
+    }
+    .moreinfo {
+        top: 30vw;
+    }
+}

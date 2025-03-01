@@ -19,10 +19,17 @@ header {
     background-color: rgba(85, 255, 255, 0.376);
     height: 10vh;
     font-family: "balsamiqsansbold";
+    overflow: hidden;
 }
-.logo {
-    position: relative;
-    right: 10ch;
+header a {
+    text-decoration: none;
+    color: black;
+}
+.menumobile {
+    display: none;
+}
+.menutoggle {
+    display: none;
 }
 .filterstoggle {
     display: none;
@@ -45,9 +52,11 @@ header {
 }
 #cost {
     width: 80px;
+    height: 25px;
 }
 #size {
     width: 80px;
+    height: 25px;
 }
 .items {
     display: grid;
@@ -87,10 +96,11 @@ header {
 .buybutton {
     color: white;
     text-decoration: none;
-    padding: .8em 1em;
+    padding: .8em;
     border-radius: 5px;
     background: rgb(77, 163, 220);
     transition: .2s;
+    text-align: center;
 }
 .buybutton:hover {
     background: rgb(84, 187, 255);
@@ -135,21 +145,45 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 766px) {
     header {
         flex-direction: column;
+        height: 10vh;
     }
-    .logo {
-        position: static;
+    .menu-pc {
+        display: none;
+    }
+    .menutoggle {
+        display: inline;
+        position: absolute;
+        top: 1vh;
+        right: 9vw;
+        background-color: rgba(85, 255, 255, 0);
+        border: 0cm;
+        font-size: 250%;
+    }
+    .menumobile.show {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        animation: show .5s ease-in-out;
+        background-color: rgba(85, 255, 255, 0.376);
+        z-index: 1;
+    }
+    .menumobile.show a {
+        padding: 5px;
     }
     body {
         display: flex;
-        justify-content: center;
         flex-direction: column;
     }
     .filterstoggle {
-        display: block;
+        display: inline;
         width: 25vw;
         height: 12vw;
         position: relative;
-        left: 37vw;
+        left: 37.5vw;
         top: 3vh;
         background-color: rgb(77, 163, 220);
         color: white;
@@ -205,7 +239,7 @@ footer {
     .desc {
         flex-direction: column;
         left: 0vw;
-        bottom: 26vw;
+        bottom: 23vw;
         width: 100%;
         font-size: 70%;
     }
@@ -240,6 +274,7 @@ footer {
         top: 0;
         flex-direction: column;
         margin-top: 7vh;
+        height: 12vh;
     }
 }
 @media screen and (min-width: 375px) and (max-width: 766px) {
@@ -256,10 +291,40 @@ footer {
         width: 60px;
     }
 }
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-    .logo {
-        position: static;
+@media screen and (min-width: 450px) and (max-width: 766px) {
+    .buying {
+        left: 70vw;
+        bottom: 19vw;
+        width: 60px;
     }
+    .productimg {
+        width: 15vw;
+        height: 15vw;
+    }
+    .filterstoggle {
+        height: 10vw;
+        left: 38vw;
+    }
+    .desc {
+        bottom: 21vw;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 766px) {
+    .buying {
+        left: 74vw;
+        bottom: 19vw;
+        width: 60px;
+    }
+    .filterstoggle {
+        height: 8vw;
+        left: 38vw;
+    }
+    .desc {
+        left: 20vw;
+        bottom: 21vw;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     .filters {
         width: 17vw;
     }
@@ -305,11 +370,7 @@ footer {
         top: 195vw;
     }
 }
-@media screen and (min-width: 1024px) and (max-width: 1365px) {
-    .logo {
-        position: relative;
-        right: 10ch;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
     .buybutton {
         padding: .5em;
         font-size: 120%;
@@ -333,7 +394,17 @@ footer {
         font-size: 85%;
     }
     .filters {
+        width: 17vw;
         font-size: 95%;
+    }
+    #cost {
+        width: 6vw;
+    }
+    #size {
+        width: 6vw;
+    }
+    #absurd {
+        width: 17vw;
     }
     .filtersname
     {
@@ -341,6 +412,11 @@ footer {
     }
     footer {
         top: 180vw;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+    footer {
+        top: 175vw;
     }
 }
 @media screen and (min-width: 1600px) and (max-width: 1919px) {

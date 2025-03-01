@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/redstaros.css">
     <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon">
-    <title>nyarchlinux store</title>
+    <title>nyarchstore - Red Star OS</title>
 </head>
 <header>
-    <a href="../index.html"><img class="logo" src="../assets/images/logo.svg"></a>
-    <p>oh yea <a target="_blank" href="../assets/videos/justinbieber.mp4"
-            style="text-decoration: none; color: black;">justin bieber</a> linux</p>
+    <img class="logo" src="../assets/images/logo.svg">
+    <a target="_blank" href="../assets/videos/justinbieber.mp4" class="menu-pc">oh yea justin bieber linux</a>
+    <a class="menu-pc" href="../pages/aboutus.html">О сайте</a>
+    <button class="menutoggle"><span>☰</span></button>
+    <div class="menumobile">
+        <a target="_blank" href="../assets/videos/justinbieber.mp4">oh yea justin bieber linux</a>
+        <a href="../pages/aboutus.html">О сайте</a>
+    </div>
 </header>
 
 <body>
@@ -39,26 +44,31 @@
         <div class="desc">
             <span>Red Star OS - северокорейская ОС, созданная чисто для своей родины - Северной Кореи.</span>
             <span>Единственное, что мы знаем - она до сих пор существует. Да ладно, информации на самом деле достаточно.</span>
-            <span>Она основана на Fedora, разработка началась с 2002 года, до этого там сидели на англоязычных версиях Windows.
+            <span class="moredesc">Она основана на Fedora, разработка началась с 2002 года, до этого там сидели на англоязычных версиях Windows.
                 Первая версия появилась на свет в 2008 году. С тех пор Windows заменили на свою систему с повышенной безопасностью и "патриотичностью". 
             В данной системе также существует система водяных знаков для различных флешек для отслеживания теневого оборота иностранного контента.</span>
-            <span>Продукт довольно специфичный, поэтому отзывы и рейтинг недоступны.</span>
+            <button class="openmoredesc"><span>🠗 Узнать больше 🠗</span></button>
+            <span><i>Продукт довольно специфичный, поэтому отзывы и рейтинг недоступны.</i></span>
         </div>
         <h4 id="specs">Системные требования</h4>
         <div class="specs">
             <div class="min">
                 <p>Минимальные требования:</p>
-                <span>??????</span>
+                <span>Процессор: ??????</span>
+                <span>Оперативная память: ??????</span>
+                <span>Хранилище: ??????</span>
             </div>
             <div class="rec">
                 <p>Рекомендованные требования:</p>
-                <span>??????</span>
+                <span>Процессор: ??????</span>
+                <span>Оперативная память: ??????</span>
+                <span>Хранилище: ??????</span>
             </div>
         </div>
         <h4 id="revievs">Отзывы</h4>
         <div class="revievs">
             <div id="reviev">
-                <img class="avatar" src="../assets/images/avatars/kndr.jpg">
+                <img class="avatar" src="../assets/images/avatars/foto.jpg">
                 <span class="name">Представители КНДР</span>
                 <span class="revievstars">★★★★★</span>
                 <br>
@@ -69,6 +79,12 @@
             <h4>Отзывы недоступны, так как данный продукт очень специфичный <del>и за сайтом установлено наблюдение корейской народно-демократической республикой.</del></h4>
         </div>
     </div>
+    <script src="../scripts/mobilemenu.js"></script>
+    <script src="../scripts/moredesc.js"></script>
 </body>
+<footer>
+    <img class="logo" src="../assets/images/logodark.svg">
+    <p>우수한 운영 체제</p>
+</footer>
 
 </html>

@@ -20,6 +20,16 @@ header {
     height: 10vh;
     font-family: "balsamiqsansbold";
 }
+header a {
+    text-decoration: none;
+    color: black;
+}
+.menumobile {
+    display: none;
+}
+.menutoggle {
+    display: none;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -39,16 +49,57 @@ body {
 }
 #rofl {
     position: relative;
-    width: 10%;
-    left: 45%;
+    width: 19%;
+    left: 40%;
     color: white;
     text-decoration: none;
     padding: .5em;
     border-radius: 5px;
     background: rgb(77, 163, 220);
+    margin-top: 10px;
+    text-align: center;
 }
 @media screen and (min-width: 320px) and (max-width: 766px) {
     header {
         flex-direction: column;
+    }
+    .menu-pc {
+        display: none;
+    }
+    .menutoggle {
+        display: inline;
+        position: absolute;
+        top: 1vh;
+        right: 9vw;
+        background-color: rgba(85, 255, 255, 0);
+        border: 0cm;
+        font-size: 250%;
+    }
+    .menumobile.show {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        animation: show .5s ease-in-out;
+        background-color: rgba(85, 255, 255, 0.376);
+        z-index: 1;
+    }
+    @keyframes show {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 100;
+        }
+    }
+    .menumobile.show a {
+        padding: 5px;
+    }
+    #rofl {
+        left: 25%;
+        width: 47%;
     }
 }

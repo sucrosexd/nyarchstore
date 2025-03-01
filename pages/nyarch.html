@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/product.css">
+    <link rel="stylesheet" href="../styles/nyarch.css">
     <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon">
-    <title>nyarchlinux store</title>
+    <title>nyarchstore - Nyarch Linux</title>
 </head>
 <header>
-    <a href="../index.html"><img class="logo" src="../assets/images/logo.svg"></a>
-    <p>oh yea <a target="_blank" href="../assets/videos/justinbieber.mp4"
-            style="text-decoration: none; color: black;">justin bieber</a> linux</p>
+    <img class="logo" src="../assets/images/logo.svg">
+    <a target="_blank" href="../assets/videos/justinbieber.mp4" class="menu-pc">oh yea justin bieber linux</a>
+    <a class="menu-pc" href="../pages/aboutus.html">О сайте</a>
+    <button class="menutoggle"><span>☰</span></button>
+    <div class="menumobile">
+        <a target="_blank" href="../assets/videos/justinbieber.mp4">oh yea justin bieber linux</a>
+        <a href="../pages/aboutus.html">О сайте</a>
+    </div>
 </header>
 
 <body>
@@ -43,10 +48,11 @@
                 Может, вы уже привыкли к Linux, но хотите ежедневно видеть аниме-девочек на рабочем столе?
                 Хотите личную аниме-асистентку в системе?
                 Nyarch Linux для вас!</span>
-                <span>Встроенный в систему Catgirl Downloader позволит вам просматривать и скачивать арты с кошко-девочками в любой момент без браузера!
+                <span class="moredesc">Встроенный в систему Catgirl Downloader позволит вам просматривать и скачивать арты с кошко-девочками в любой момент без браузера!
                 Material UwU поможет вам украсить вашу систему под цветовую гамму вашей аниме-девочки на обоях, 
                 а Nyarch Assistant готова в любой момент помочь вам с системными задачами, развеселить вас или просто поговорить с вами.
                 Выкидывайте Windows или скучные дистрибутивы Linux и переходите на Nyarch, чтобы ежедневно быть с любимыми аниме-девочками!</span>
+                <button class="openmoredesc"><span>🠗 Узнать больше 🠗</span></button>
         </div>
         <h4 id="specs">Системные требования</h4>
         <div class="specs">
@@ -94,9 +100,15 @@
                 <br>
                 <span>минусы: гном</span>
             </div>
-            <h4><a target="_blank" href="">Войдите</a> или <a target="_blank" href="">зарегистрируйтесь</a>, чтобы оставить отзыв</h4>
+            <h4><a target="_blank" href="../assets/videos/grievous.mov">Войдите</a> или <a target="_blank" href="../assets/videos/HARMONICACAT.mp4">зарегистрируйтесь</a>, чтобы оставить отзыв</h4>
         </div>
     </div>
+    <script src="../scripts/mobilemenu.js"></script>
+    <script src="../scripts/moredesc.js"></script>
 </body>
+<footer>
+    <img class="logo" src="../assets/images/logodark.svg">
+    <p>omaga nyarch linux</p>
+</footer>
 
 </html>
